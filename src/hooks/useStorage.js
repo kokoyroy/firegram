@@ -5,7 +5,7 @@ function useStorage(file) {
     const [progress, setProgress] = useState(0)
     const [error, setError] = useState(null)
     const [url, setUrl] = useState(null)
-// console.log(file.name);
+    // console.log(file.name);
     useEffect(() => {
         //references 
         const storageRef = projectStorage.ref(file.name);
@@ -18,8 +18,9 @@ function useStorage(file) {
             setError(err);
         }, async () => {
             const url = await storageRef.getDownloadURL();
-            collectionRef.add({ url: url, createdAt: timestamp(), name: file.name })
+            let time = await timestamp()
             setUrl(url);
+            collectionRef.add({ url: url, createdAt: time, name: file.name })
         })
     }, [file]);
 
