@@ -66,7 +66,7 @@ label:hover {
 
 /* progress bar styles */
 .progress-bar {
-  height: 50px;
+  height: 30px;
   background: var(--primary);
   margin-top: 20px;
   max-width: 960px;
@@ -75,7 +75,7 @@ label:hover {
   text-align: center;
   color: black;
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 1rem;
 }
 
 /* image grid styles */
@@ -95,9 +95,9 @@ label:hover {
 .img-wrap img {
   min-width: 100%;
   min-height: 100%;
-  max-width: 150%;
+  max-width: 100%;
   position: absolute;
-  top: 0;
+  top: -15%;
   left: 0;
   display: block;
 }
