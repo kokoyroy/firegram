@@ -1,7 +1,7 @@
 import firebase from 'firebase/app'
 import "firebase/storage";
 import "firebase/firestore";
-import secret from '../../secret';
+import secret from '../secret';
 
 // Your web app's Firebase configuration
 var firebaseConfig = secret;

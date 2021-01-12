@@ -16,6 +16,7 @@ const Usefirestore = (collection) => {
                 setDocs(documents);
             })
         //cleanup 
+        console.log('cleanup');
         return () => unsub();
     }, [collection])
 
