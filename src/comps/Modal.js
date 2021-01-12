@@ -21,7 +21,7 @@ function Modal({ selectedImage, setSelectedImage }) {
                 src={selectedImage} alt="enlarged"
                 initial={{ y: '-100vh' }}
                 animate={{ y: 0 }}
-                transition={{ delay: 1.5 }}
+                transition={{ delay: 1 }}
             />
         </motion.div>
     )
