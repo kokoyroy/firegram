@@ -10,7 +10,7 @@ function Modal({ selectedImage, setSelectedImage }) {
 
     return (
         <div className='backdrop' onClick={clickHandler} >
-            <img src={selectedImage} alt="enlarged image" />
+            <img src={selectedImage} alt="enlarged" />
         </div>
     )
 }

@@ -11,7 +11,7 @@ function UploadForm() {
     const changeHandler = (e) => {
         let selected = e.target.files[0];
         console.log(selected);
-        if (selected && types.includes(selected.type) && selected.size < 3000000) {
+        if (selected && types.includes(selected.type) && selected.size < 30000000) {
             setFile(selected)
             setError(null)
         } else {
